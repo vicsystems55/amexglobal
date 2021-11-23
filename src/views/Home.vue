@@ -42,7 +42,7 @@
                 <div class="main-menu-wrapper__bottom">
                     <nav class="main-menu">
                         <div class="main-menu__inner">
-                            <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                            <a href="#" class="mobile-nav__toggler" @click="showNav()" ><i class="fa fa-bars"></i></a>
                             <ul class="main-menu__list">
                                 
                                 
@@ -105,7 +105,7 @@
                                 <div class="col-lg-8">
                                     <div class="main-slider__content">
                                         <p>Helping Them Today</p>
-                                        <h2>Help the Poor <br> in Need</h2>
+                                        <h2>Help the Less Priviledged <br> in Need</h2>
                                         <a href="#" class="thm-btn"><i class="fas fa-arrow-circle-right"></i>Learn
                                             More</a>
                                         <div class="main-slider__shape-1 zoom-fade">
@@ -127,7 +127,7 @@
                                 <div class="col-lg-8">
                                     <div class="main-slider__content">
                                         <p>Helping Them Today</p>
-                                        <h2>Help the Poor <br> in Need</h2>
+                                        <h2>Help the Less Priviledged <br> in Need</h2>
                                         <a href="#" class="thm-btn"><i class="fas fa-arrow-circle-right"></i>Learn
                                             More</a>
                                         <div class="main-slider__shape-1 zoom-fade">
@@ -149,7 +149,7 @@
                                 <div class="col-lg-8">
                                     <div class="main-slider__content">
                                         <p>Helping Them Today</p>
-                                        <h2>Help the Poor <br> in Need</h2>
+                                        <h2>Help the Less Priviledged <br> in Need</h2>
                                         <a href="#" class="thm-btn"><i class="fas fa-arrow-circle-right"></i>Learn
                                             More</a>
                                         <div class="main-slider__shape-1 zoom-fade">
@@ -225,24 +225,8 @@
                                         consectetur notted.</p>
                                 </div>
                             </div>
-                            <div class="welcome-one__progress">
-                                <div class="welcome-one__progress-single">
-                                    <h4 class="welcome-one__progress-title">Charity</h4>
-                                    <div class="bar">
-                                        <div class="bar-inner count-bar" data-percent="83%">
-                                            <div class="count-text">83%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="welcome-one__progress-single">
-                                    <h4 class="welcome-one__progress-title">Donations</h4>
-                                    <div class="bar">
-                                        <div class="bar-inner count-bar" data-percent="38%">
-                                            <div class="count-text">38%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                           
+                           
                             <a href="#" class="welcome-one__btn thm-btn"><i class="fas fa-arrow-circle-right"></i>Learn
                                 More</a>
                         </div>
@@ -403,7 +387,7 @@
                                 </div>
                                 <div class="causes-one__content">
                                     <h3 class="causes-one__title">
-                                        <a href="causes-details.html">Education for Poor Children</a>
+                                        <a href="causes-details.html">Education for Less Priviledged Children</a>
                                     </h3>
                                     <p class="causes-one__text">There are not many of passages of lorem ipsum avail isn
                                         alteration donationa in form simply free.</p>
@@ -974,7 +958,7 @@
                                     <li><a href="#">2 Comments</a></li>
                                 </ul>
                                 <h3 class="news-one__title">
-                                    <a href="news-details.html">Donation is Hope for Poor Childrens in Africa</a>
+                                    <a href="news-details.html">Donation is Hope for Less Priviledged Childrens in Africa</a>
                                 </h3>
                             </div>
                         </div>
@@ -1134,7 +1118,7 @@
                             <div class="site-footer__bottom-inner">
                                 <div class="site-footer__bottom-logo-social">
                                     <div class="site-footer__bottom-logo">
-                                        <a href="index.html"><img src="assets/images/resources/footer-logo.jpg"
+                                        <a href="index.html"><img style="width: 50px; height: 50px;" src="assets/images/resources/logo.jpg"
                                                 alt=""></a>
                                     </div>
                                     <div class="site-footer__bottom-social">
@@ -1159,8 +1143,8 @@
     </div><!-- /.page-wrapper -->
 
 
-    <div class="mobile-nav__wrapper">
-        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+    <div class="" v-bind:class="nav_class">
+        <div class="mobile-nav__overlay mobile-nav__toggler" @click="collapseNav()"></div>
         <!-- /.mobile-nav__overlay -->
         <div class="mobile-nav__content">
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
@@ -1170,7 +1154,13 @@
                         alt="" /></a>
             </div>
             <!-- /.logo-box -->
-            <div class="mobile-nav__container"></div>
+            <div class="mobile-nav__container">
+            <ul class="main-menu__list">
+            <li><a href="contact.html">Home</a></li>
+                           <li><a href="contact.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+            </div>
             <!-- /.mobile-nav__container -->
 
             <ul class="mobile-nav__contact list-unstyled">
@@ -1225,9 +1215,24 @@
 
 
 export default {
+
+  data() {
+    return {
+      nav_class: 'mobile-nav__wrapper',
+    }
+  },
+  
   name: 'Home',
   components: {
 
-  }
+  },
+  methods: {
+    showNav(){
+      this.nav_class = 'mobile-nav__wrapper expanded'
+    },
+    collapseNav(){
+      this.nav_class = 'mobile-nav__wrapper'
+    }
+  },
 }
 </script>
