@@ -8,7 +8,7 @@
         <header class="main-header clearfix">
             <div class="main-header__logo">
                 <a href="index.html">
-                    <img src="assets/images/resources/logo.png" alt="">
+                    <img style="width: 50px; height: 50px;" src="assets/images/resources/logo.png" alt="">
                 </a>
             </div>
             <div class="main-menu-wrapper">
@@ -193,9 +193,9 @@
                     <div class="col-xl-6 col-lg-6">
                         <div class="welcome-one__left">
                             <div class="welcome-one__img-box">
-                                <img src="assets/images/resources/welcome-one-img-1.jpg" alt="">
+                                <img src="assets/images/resources/inschool.jpg" alt="">
                                 <div class="welcome-one__img-box-2">
-                                    <img src="assets/images/resources/welcome-one-img-2.jpg" alt="">
+                                    <img src="assets/images/resources/inschool2.jpg" alt="">
                                 </div>
                                 <h2 class="welcome-one__bottom-text">Helping Today</h2>
                                 <div class="welcome-one__heart-icon">
