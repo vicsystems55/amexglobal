@@ -6,7 +6,7 @@
     <!-- /.preloader -->
     <div class="page-wrapper">
         <header class="main-header clearfix">
-            <div class="main-header__logo">
+            <div style="background-color: white;" class="main-header__logo">
                 <a href="index.html">
                     <img style="width: 50px; height: 50px;" src="assets/images/resources/logo.png" alt="">
                 </a>
@@ -791,7 +791,7 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="assets/images/resources/logo-1.png" width="155"
+                <a href="index.html" aria-label="logo image"><img src="assets/images/resources/logo.png" width="155"
                         alt="" /></a>
             </div>
             <!-- /.logo-box -->
