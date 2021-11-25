@@ -33,8 +33,7 @@
                             <div class="main-menu-wrapper__right-social">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
                                 <a href="#"><i class="fab fa-facebook-square"></i></a>
-                                <a href="#"><i class="fab fa-dribbble"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                
                             </div>
                         </div>
                     </div>
@@ -48,12 +47,12 @@
                                 
                                    <li><a href="contact.html">Home</a></li>
                                    <li><a href="contact.html">About</a></li>
-                                      <li><a href="contact.html">Services</a></li>
+                                      <!-- <li><a href="contact.html">Services</a></li> -->
                                 <li><a href="contact.html">Contact</a></li>   
                                 
                             </ul>
                             <div class="main-menu__right">
-                                <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
+                                <!-- <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a> -->
                               
                                 <div class="main-menu__phone-contact">
                                     <div class="main-menu__phone-icon">
@@ -79,7 +78,7 @@
 
 
         <section class="main-slider">
-            <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
+            <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": false,
     "effect": "fade",
      "pagination": {
         "el": "#main-slider-pagination",
@@ -91,7 +90,7 @@
         "prevEl": "#main-slider__swiper-button-prev"
     },
     "autoplay": {
-        "delay": 5000
+        "delay": 50000
     }}'>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -116,12 +115,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <!-- <div class="swiper-slide">
                         <div class="image-layer"
                             style="background-image: url(assets/images/backgrounds/slide2.jpg);">
                         </div>
                         <div class="image-layer-overlay"></div>
-                        <!-- /.image-layer -->
+                      
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-8">
@@ -143,7 +142,7 @@
                             style="background-image: url(assets/images/backgrounds/slide3.jpg);">
                         </div>
                         <div class="image-layer-overlay"></div>
-                        <!-- /.image-layer -->
+                      
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-8">
@@ -159,30 +158,30 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="main-slider__counter">
                     <ul class="main-slider__counter-box list-unstyled">
                         <li>
-                            <h3 class="main-sldier__counter-digit">4390</h3>
+                            <h5 class="main-sldier__counter-digit">4390</h5>
                             <span class="main-slider__counter-text">Volunteers are Available</span>
                         </li>
                         <li>
-                            <h3 class="main-sldier__counter-digit">8900</h3>
+                            <h5 class="main-sldier__counter-digit">$8,900.00</h5>
                             <span class="main-slider__counter-text">Funds Raised by People</span>
                         </li>
                     </ul>
                 </div>
                 <!-- If we need navigation buttons -->
-                <div class="swiper-pagination" id="main-slider-pagination"></div>
-                <div class="main-slider__nav">
+                <!-- <div class="swiper-pagination" id="main-slider-pagination"></div> -->
+                <!-- <div class="main-slider__nav">
                     <div class="swiper-button-prev" id="main-slider__swiper-button-next"><i
                             class="icon-right-arrow icon-left-arrow"></i>
                     </div>
                     <div class="swiper-button-next" id="main-slider__swiper-button-prev"><i
                             class="icon-right-arrow"></i>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -207,12 +206,12 @@
                     <div class="col-xl-6 col-lg-6">
                         <div class="welcome-one__right">
                             <div class="section-title text-left">
-                                <span class="section-title__tagline">Welcome to Charity</span>
+                                <span class="section-title__tagline">Welcome to Apex Global Foundation</span>
                                 <h2 class="section-title__title">Helping each other can make world better</h2>
                             </div>
-                            <p class="welcome-one__right-text">Lorem ipsum dolor sit amet, consectetur notted
-                                adipisicing elit sed do eiusmod tempor incididunt ut labore et simply free text dolore
-                                magna aliqua lonm andhn.</p>
+                            <p class="welcome-one__right-text">
+                                A world of hope, tolerance and social justice, where poverty has been overcome and all people live in dignity and security.
+                            </p>
                             <div class="welcome-one__our-mission-and-story">
                                 <div class="welcome-one__mission-and-story-single">
                                     <h3><i class="fas fa-arrow-circle-right"></i>Our Mission</h3>
@@ -220,7 +219,7 @@
                                         consectetur notted.</p>
                                 </div>
                                 <div class="welcome-one__mission-and-story-single">
-                                    <h3><i class="fas fa-arrow-circle-right"></i>Our Story</h3>
+                                    <h3><i class="fas fa-arrow-circle-right"></i>Our Vision</h3>
                                     <p class="welcome-one__our-mission-and-story-text">Lorem ipsum dolor sit amet not is
                                         consectetur notted.</p>
                                 </div>
@@ -684,25 +683,8 @@
                                 <a href="#" class="footer-widget__about-btn"><i class="fa fa-heart"></i>Donate </a>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                            <div class="footer-widget__column footer-widget__explore clearfix">
-                                <h3 class="footer-widget__title">Explore</h3>
-                                <ul class="footer-widget__explore-list list-unstyled">
-                                    <li><a href="#">Donate</a></li>
-                                    <li><a href="#">Campaigns</a></li>
-                                    <li><a href="#">Fundraise</a></li>
-                                    <li><a href="#">Volunteers</a></li>
-                                    <li><a href="#">Sponsors</a></li>
-                                </ul>
-                                <ul class="footer-widget__explore-list footer-widget__explore-list-two list-unstyled">
-                                    <li><a href="#">Fundraising</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Help</a></li>
-                                    <li><a href="#">Faqs</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                        
+                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                             <div class="footer-widget__column footer-widget__contact">
                                 <h3 class="footer-widget__title">Contact</h3>
                                 <ul class="list-unstyled footer-widget__contact-list">
@@ -713,7 +695,9 @@
                                         <div class="text">
                                             <p>
                                                 <span>Call Anytime</span>
-                                                <a href="tel:92 666 888 0000">92 666 888 0000</a>
+                                                <a href="tel:92 666 888 0000">0809 522 4343</a> <br>
+                                                <a href="tel:92 666 888 0000">01-8895101</a>
+                                                
                                             </p>
                                         </div>
                                     </li>
@@ -724,7 +708,7 @@
                                         <div class="text">
                                             <p>
                                                 <span>Send Email</span>
-                                                <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+                                                <a href="mailto:needhelp@company.com">support@apexglobalfoundation.com.ng</a>
                                             </p>
                                         </div>
                                     </li>
@@ -733,7 +717,13 @@
                                             <i class="icon-address"></i>
                                         </div>
                                         <div class="text">
-                                            <p><span>Visit Office</span>80 broklyn golden street</p>
+                                            <p><span>Visit Office</span>
+                                            
+                                            Fudie Mall plaza
+                                            Landmark: Chida hotel beside  Didi building material
+                                            Plaza number: C2
+                                            
+                                            </p>
                                         </div>
                                     </li>
                                 </ul>
@@ -742,8 +732,7 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                             <div class="footer-widget__column footer-widget__newsletter">
                                 <h3 class="footer-widget__title">Newsletter</h3>
-                                <p class="footer-widget__newsletter-text">Lorem ipsum dolor sit ame consect etur
-                                    pisicing elit sed do.</p>
+                                <p class="footer-widget__newsletter-text">Follow our progress</p>
                                 <form class="footer-widget__newsletter-form">
                                     <input type="email" placeholder="Email address" name="email">
                                     <button type="submit" class="footer-widget__newsletter-btn"><i
