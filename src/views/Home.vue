@@ -63,7 +63,19 @@
                                         <a href="tel:92 666 888 0000">92 666 888 0000</a>
                                     </div>
                                 </div>
-                                <a href="causes-details.html" class="main-menu__donate-btn"><i class="fa fa-heart"></i>Donate </a>
+                                <a  class=""> 
+                                  <stripe-checkout
+                                        ref="checkoutRef"
+                                        mode="payment"
+                                        :pk="publishableKey"
+                                        :line-items="lineItems"
+                                        :success-url="successURL"
+                                        :cancel-url="cancelURL"
+                                        @loading="v => loading = v"
+                                        />
+                                        <button @click="submit" class="main-menu__donate-btn"><i class="fa fa-heart"></i> Donate</button>
+                                
+                                </a>
                             </div>
                         </div>
                     </nav>
@@ -392,7 +404,7 @@
                                         </div>
                                         <div class="text">
                                             <p>Call Anytime</p>
-                                            <a href="tel:92 666 888 0000">92 666 888 0000</a>
+                                            <a href="">0809 522 4343</a>
                                         </div>
                                     </li>
                                     <li>
@@ -468,6 +480,10 @@
                 </div>
             </div>
         </section>
+
+        <div>
+  
+  </div>
         <!--Helping One End-->
               <!-- <section class="contact-page-google-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-118.80123790098536!3d34.152323469614075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82469c2162619%3A0xba03efb7998eef6d!2sCostco+Wholesale!5e0!3m2!1sbn!2sbd!4v1562518641290!5m2!1sbn!2sbd" class="contact-page-google-map__one" allowfullscreen></iframe>
@@ -864,18 +880,17 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:needhelp@packageName__.com">needhelp@halpes.com</a>
+                    <a href="mailto:needhelp@packageName__.com">support@apexglobalfoundation.com.ng</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>
-                    <a href="tel:666-888-0000">666 888 0000</a>
+                    <a href="tel:666-888-0000">">0809 522 4343</a>
                 </li>
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
                 <div class="mobile-nav__social">
                     <a href="#" class="fab fa-twitter"></a>
                     <a href="#" class="fab fa-facebook-square"></a>
-                    <a href="#" class="fab fa-pinterest-p"></a>
                     <a href="#" class="fab fa-instagram"></a>
                 </div><!-- /.mobile-nav__social -->
             </div><!-- /.mobile-nav__top -->
@@ -911,19 +926,31 @@
 <script>
 // @ is an alias to /src
 
-
+import { StripeCheckout } from '@vue-stripe/vue-stripe';
 export default {
+
+      components: {
+    StripeCheckout,
+  },
 
   data() {
     return {
       nav_class: 'mobile-nav__wrapper',
+            loading: false,
+            publishableKey: 'price_1JzkOvE4ZHeTMw8TArdnY6d7',
+      lineItems: [
+        {
+          price: 'price_1JzkN1E4ZHeTMw8TA3VSofUr', // The id of the one-time price you created in your Stripe dashboard
+          quantity: 1,
+        },
+      ],
+      successURL: 'https://apexglobalfoundation.com.ng',
+      cancelURL: 'https://apexglobalfoundation.com.ng',
     }
   },
   
   name: 'Home',
-  components: {
-
-  },
+ 
   methods: {
     showNav(){
       this.nav_class = 'mobile-nav__wrapper expanded'
@@ -937,7 +964,12 @@ export default {
     var top = element.offsetTop;
 
     window.scrollTo(0, top);
-    }
+    },
+
+        submit () {
+      // You will be redirected to Stripe's secure checkout page
+      this.$refs.checkoutRef.redirectToCheckout();
+    },
   },
 }
 </script>
