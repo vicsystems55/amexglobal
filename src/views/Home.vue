@@ -11,7 +11,7 @@
                     <img style="width: 50px; height: 50px;" src="assets/images/resources/logo.png" alt="">
                 </a>
             </div>
-            <div class="main-menu-wrapper">
+            <div ref="home" class="main-menu-wrapper">
                 <div class="main-menu-wrapper__top">
                     <div class="main-menu-wrapper__top-inner">
                         <div class="main-menu-wrapper__left">
@@ -854,9 +854,9 @@
             <!-- /.logo-box -->
             <div class="mobile-nav__container">
             <ul class="main-menu__list">
-            <li><a href="contact.html">Home</a></li>
-                           <li><a href="contact.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+            <li><a @click="scrollToDiv('home')" >Home</a></li>
+                           <li><a @click="scrollToDiv('about')">About</a></li>
+                                <li><a @click="scrollToDiv('contact')" >Contact</a></li>
                             </ul>
             </div>
             <!-- /.mobile-nav__container -->
