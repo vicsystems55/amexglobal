@@ -281,7 +281,7 @@
                         <!--Three Boxes Single-->
                         <div class="three-boxes__single three-boxes__single-item-two">
                             <div class="three-boxes__single-bg"
-                                style="background-image: url(assets/images/resources/three-boxes-img-1.jpg)"></div>
+                                style="background-image: url(assets/images/resources/three-boxes-img-22.jpg)"></div>
                             <div class="three-boxes__content">
                                 <div class="three-boxes__icon">
                                     <span class="icon-water"></span>
@@ -299,7 +299,7 @@
                         <!--Three Boxes Single-->
                         <div class="three-boxes__single three-boxes__single-item-three">
                             <div class="three-boxes__single-bg"
-                                style="background-image: url(assets/images/resources/three-boxes-img-1.jpg)"></div>
+                                style="background-image: url(assets/images/resources/three-boxes-img-33.jpg)"></div>
                             <div class="three-boxes__content">
                                 <div class="three-boxes__icon">
                                     <span class="icon-health-check"></span>
