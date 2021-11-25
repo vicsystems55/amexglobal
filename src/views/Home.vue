@@ -235,7 +235,7 @@
 
         <!--Causes One Start-->
 
-          <section ref="about" class="about-page">
+          <section ref="about" class="about-page" style="padding-top: 50px;">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
@@ -251,14 +251,12 @@
                     <div class="col-xl-6">
                         <div class="about-page__right">
                             <div class="section-title text-left">
-                                <span class="section-title__tagline">Our Inroductions</span>
+                                <span class="section-title__tagline">Our Introduction</span>
                                 <h2 class="section-title__title">We believe that we can save more lifes</h2>
                             </div>
                             <p class="about-page__right-text">We are trusted by our clients and have a reputation for
-                                the best services in the field. Lorem ipsum is simply free text dolor sit amett
-                                consectetur adipiscing elit. It is a long established fact that a reader will be
-                                distracted by the readable content of a page.</p>
-                            <h3 class="about-page__right-title">Halpes is the largest global crowdfunding community in
+                                the best services in the field. </p>
+                            <h3 class="about-page__right-title">Apex Global Foundation is the largest global charity building community in
                                 the world</h3>
                             <div class="about-five__progress-wrap">
 
