@@ -46,9 +46,9 @@
                                 
                                 
                                    <li><a href="contact.html">Home</a></li>
-                                   <li><a href="contact.html">About</a></li>
+                                   <li><a href="#about">About</a></li>
                                       <!-- <li><a href="contact.html">Services</a></li> -->
-                                <li><a href="contact.html">Contact</a></li>   
+                                <li><a href="#contact">Contact</a></li>   
                                 
                             </ul>
                             <div class="main-menu__right">
@@ -167,7 +167,7 @@
                             <span class="main-slider__counter-text">Volunteers are Available</span>
                         </li>
                         <li>
-                            <h5 class="main-sldier__counter-digit">$8,900.00</h5>
+                            <h5 class="main-sldier__counter-digit">$8,900</h5>
                             <span class="main-slider__counter-text">Funds Raised by People</span>
                         </li>
                     </ul>
@@ -215,13 +215,11 @@
                             <div class="welcome-one__our-mission-and-story">
                                 <div class="welcome-one__mission-and-story-single">
                                     <h3><i class="fas fa-arrow-circle-right"></i>Our Mission</h3>
-                                    <p class="welcome-one__our-mission-and-story-text">Lorem ipsum dolor sit amet not is
-                                        consectetur notted.</p>
+                                    <p class="welcome-one__our-mission-and-story-text">Reach the needy in the society</p>
                                 </div>
                                 <div class="welcome-one__mission-and-story-single">
                                     <h3><i class="fas fa-arrow-circle-right"></i>Our Vision</h3>
-                                    <p class="welcome-one__our-mission-and-story-text">Lorem ipsum dolor sit amet not is
-                                        consectetur notted.</p>
+                                    <p class="welcome-one__our-mission-and-story-text">Get</p>
                                 </div>
                             </div>
                            
