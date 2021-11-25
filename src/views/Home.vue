@@ -45,10 +45,10 @@
                             <ul class="main-menu__list">
                                 
                                 
-                                   <li><a href="contact.html">Home</a></li>
-                                   <li><a href="#about">About</a></li>
+                                   <li><a href="">Home</a></li>
+                                   <li><a href="/#/about">About</a></li>
                                       <!-- <li><a href="contact.html">Services</a></li> -->
-                                <li><a href="#contact">Contact</a></li>   
+                                <li><a href="/#/contact">Contact</a></li>   
                                 
                             </ul>
                             <div class="main-menu__right">
@@ -319,80 +319,85 @@
         <!--Three Boxes End-->
 
         <!--Helping One Start-->
-        <section class="helping-one">
+        <section class="contact-page">
             <div class="container">
                 <div class="section-title text-center">
-                    <span class="section-title__tagline">Latest Causes</span>
-                    <h2 class="section-title__title">Find the popular cause <br> and donate them</h2>
+                    <span class="section-title__tagline">Contact With Us</span>
+                    <h2 class="section-title__title">We love to hear from our <br> happy customers</h2>
                 </div>
                 <div class="row">
                     <div class="col-xl-6 col-lg-6">
-                        <div class="helping-one__left">
-                            <h3 class="helping-one__title">We’re Helping Today. Helping Tommorow</h3>
-                            <p class="helping-one__text">There are many variations of passages of available but the
-                                majority have suffered alteration in some form, by injected humou or randomised words
-                                even slightly believable. All the Lorem Ipsum generators on the Internet tend.</p>
-                            <ul class="helping-one__left-list list-unstyled">
-                                <li>
-                                    <div class="helping-one__left-icon">
-                                        <i class="fas fa-arrow-circle-right"></i>
-                                    </div>
-                                    <div class="helping-one__left-text">
-                                        <p>Making this the first true generator on the Internet</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="helping-one__left-icon">
-                                        <i class="fas fa-arrow-circle-right"></i>
-                                    </div>
-                                    <div class="helping-one__left-text">
-                                        <p>Lorem Ipsum is not simply random text</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="helping-one__left-icon">
-                                        <i class="fas fa-arrow-circle-right"></i>
-                                    </div>
-                                    <div class="helping-one__left-text">
-                                        <p>If you are going to use a passage</p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="helping-one__left-img">
-                                <img src="assets/images/resources/helping-one-left-img.jpg" alt="">
-                                <div class="helping-one__left-icon-box">
-                                    <span class="icon-heart"></span>
-                                </div>
+                        <div class="contact-page__left">
+                            <div class="contact-page__img">
+                                <img src="assets/images/resources/contact-page-img-1.jpg" alt="">
+                            </div>
+                            <p class="contact-page__text">There are many variations of passages of available but the majority have suffered alteration in some form, by injected humou or randomised words even slightly believable.</p>
+                            <div class="contact-page__contact-info">
+                                <ul class="contact-page__contact-list list-unstyled">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-chat"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Call Anytime</p>
+                                            <a href="tel:92 666 888 0000">92 666 888 0000</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-message"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Send Email</p>
+                                            <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-address"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Visit Office</p>
+                                            <h5>80 broklyn golden street</h5>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6">
-                        <div class="helping-one__right">
-                            <form action="" class="helping-one__right-form">
+                        <div class="contact-page__form">
+                            <form action="assets/inc/sendemail.php" class="contact-page__main-form contact-form-validated">
                                 <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="helping-one__right-input-box">
-                                            <input type="text" name="amount" placeholder="Enter Donation Amount">
-                                            <div class="helping-one__right-dolar-icon">
-                                                <span>$</span>
-                                            </div>
+                                    <div class="col-xl-12">
+                                        <div class="contact-page__input-box">
+                                            <input type="text" placeholder="Your name" name="name">
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <input type="text" name="name" placeholder="Your Name">
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="contact-page__input-box">
+                                            <input type="email" placeholder="Email address" name="email">
+                                        </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <input type="email" name="email" placeholder="Email Address">
+                                    <div class="col-xl-6">
+                                        <div class="contact-page__input-box">
+                                            <input type="text" placeholder="Subject" name="subject">
+                                        </div>
                                     </div>
-                                    <div class="col-lg-12">
-                                        <input type="text" name="phone" placeholder="Phone Number">
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="contact-page__input-box">
+                                            <input type="text" placeholder="Phone Number" name="phone">
+                                        </div>
                                     </div>
-                                    <div class="col-lg-12">
-                                        <textarea name="message" placeholder="Write Message"></textarea>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <button type="submit" class="thm-btn helping-one__right-btn"><i
-                                                class="fas fa-arrow-circle-right"></i>Continue Now</button>
+                                    <div class="col-xl-12">
+                                        <div class="contact-page__input-box">
+                                            <textarea name="message" placeholder="Write message"></textarea>
+                                        </div>
+                                        <button type="submit" class="thm-btn contact-page__btn"><i class="fas fa-arrow-circle-right"></i>Send a Message</button>
                                     </div>
                                 </div>
                             </form>
@@ -402,6 +407,10 @@
             </div>
         </section>
         <!--Helping One End-->
+              <section class="contact-page-google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-118.80123790098536!3d34.152323469614075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82469c2162619%3A0xba03efb7998eef6d!2sCostco+Wholesale!5e0!3m2!1sbn!2sbd!4v1562518641290!5m2!1sbn!2sbd" class="contact-page-google-map__one" allowfullscreen></iframe>
+
+        </section>
 
         <!--Gallery One Start-->
         <section class="gallery-one">
@@ -463,7 +472,7 @@
         <!--Gallery One End-->
 
         <!--Testimonial One Start-->
-        <section class="testimonial-one">
+        <!-- <section class="testimonial-one">
             <div class="testimonial-one-bg"
                 style="background-image: url(assets/images/backgrounds/testimonial-1-bg.jpg)"></div>
             <div class="container">
@@ -479,7 +488,7 @@
                     <div class="col-xl-8">
                         <div class="testimonial-one__right">
                             <div class="testimonial-one__carousel owl-theme owl-carousel">
-                                <!--Testimonial One Single-->
+                                
                                 <div class="testimonial-one__single">
                                     <p class="testimonial-one__text">Lorem ipsum is simply free text dolor sit amet,
                                         consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore
@@ -497,7 +506,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--Testimonial One Single-->
+                               
                                 <div class="testimonial-one__single">
                                     <p class="testimonial-one__text">Lorem ipsum is simply free text dolor sit amet,
                                         consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore
@@ -515,7 +524,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--Testimonial One Single-->
+                             
                                 <div class="testimonial-one__single">
                                     <p class="testimonial-one__text">Lorem ipsum is simply free text dolor sit amet,
                                         consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore
@@ -533,7 +542,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--Testimonial One Single-->
+                               
                                 <div class="testimonial-one__single">
                                     <p class="testimonial-one__text">Lorem ipsum is simply free text dolor sit amet,
                                         consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore
@@ -556,14 +565,14 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--Testimonial One End-->
 
         <!--Help Them Start-->
   
         <!--Help Them End-->
 
-        <section class="news-one">
+        <!-- <section class="news-one">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8 col-lg-8">
@@ -661,7 +670,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--Brand One Start-->
      
