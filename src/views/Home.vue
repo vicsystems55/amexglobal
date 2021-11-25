@@ -341,8 +341,7 @@
                                 </div>
                                 <div class="three-boxes__text-box">
                                     <h2>Clean Water</h2>
-                                    <p class="three-boxes__text">Lorem ipsum is simply free text available amet,
-                                        consectetuer adipiscing elit. There are not many passages of ipsum.</p>
+                                    <p class="three-boxes__text">After a natural disaster, safe drinking water is a priority. Humans can live longer without food than water, </p>
                                     <a href="#" class="three-boxes__btn"><i class="fa fa-heart"></i>Donate </a>
                                 </div>
                             </div>
@@ -359,8 +358,8 @@
                                 </div>
                                 <div class="three-boxes__text-box">
                                     <h2>Medical Treatment</h2>
-                                    <p class="three-boxes__text">Lorem ipsum is simply free text available amet,
-                                        consectetuer adipiscing elit. There are not many passages of ipsum.</p>
+                                    <p class="three-boxes__text">“The art of medicine consists of amusing the patient while nature cures the disease.”
+― Voltaire</p>
                                     <a href="#" class="three-boxes__btn"><i class="fa fa-heart"></i>Donate </a>
                                 </div>
                             </div>
@@ -397,8 +396,8 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="icon">
-                                            <span class="icon-message"></span>
+                                        <div style="height: 45px; padding: 10px;" class="icon">
+                                            <span style="font-size:20pt;" class="icon-message"></span>
                                         </div>
                                         <div class="text">
                                             <p>Send Email</p>
@@ -406,8 +405,8 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="icon">
-                                            <span class="icon-address"></span>
+                                        <div style="height: 45px; padding: 10px;" class="icon">
+                                            <span style="font-size:20pt;" class="icon-address"></span>
                                         </div>
                                         <div class="text">
                                             <p>Visit Office</p>
@@ -416,8 +415,8 @@
                                     </li>
 
                                     <li>
-                                        <div class="icon">
-                                            <span class="icon-address"></span>
+                                        <div style="height: 45px; padding: 10px;" class="icon">
+                                            <span style="font-size:20pt;" class="icon-address"></span>
                                         </div>
                                         <div class="text">
                                             <p>Visit Office</p>
@@ -748,8 +747,7 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget__column footer-widget__about">
                                 <h3 class="footer-widget__title">About</h3>
-                                <p class="footer-widget__text">Lorem ipsum dolor sit ame consect etur pisicing elit sed
-                                    do eiusmod tempor incididunt ut labore.</p>
+                                <p class="footer-widget__text">We are trusted by our clients and have a reputation for the best services in the field.</p>
                                 <a href="#" class="footer-widget__about-btn"><i class="fa fa-heart"></i>Donate </a>
                             </div>
                         </div>
