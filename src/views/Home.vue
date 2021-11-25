@@ -45,10 +45,10 @@
                             <ul class="main-menu__list">
                                 
                                 
-                                   <li><a href="">Home</a></li>
-                                   <li><a href="/#/about">About</a></li>
+                                   <li><a href="" @click="scrollToDiv('home')" >Home</a></li>
+                                   <li><a  @click="scrollToDiv('about')">About</a></li>
                                       <!-- <li><a href="contact.html">Services</a></li> -->
-                                <li><a href="/#/contact">Contact</a></li>   
+                                <li><a  @click="scrollToDiv('contact')" >Contact</a></li>   
                                 
                             </ul>
                             <div class="main-menu__right">
@@ -234,6 +234,62 @@
         <!--Welcome One End-->
 
         <!--Causes One Start-->
+
+          <section ref="about" class="about-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="about-page__left">
+                            <div class="about-page__img">
+                                <img src="assets/images/resources/about-page-img-1.jpg" alt="">
+                                <div class="about-page__trusted">
+                                    <h3>We’re trusted by <span>9,8750</span> donors</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="about-page__right">
+                            <div class="section-title text-left">
+                                <span class="section-title__tagline">Our Inroductions</span>
+                                <h2 class="section-title__title">We believe that we can save more lifes</h2>
+                            </div>
+                            <p class="about-page__right-text">We are trusted by our clients and have a reputation for
+                                the best services in the field. Lorem ipsum is simply free text dolor sit amett
+                                consectetur adipiscing elit. It is a long established fact that a reader will be
+                                distracted by the readable content of a page.</p>
+                            <h3 class="about-page__right-title">Halpes is the largest global crowdfunding community in
+                                the world</h3>
+                            <div class="about-five__progress-wrap">
+
+                                <div class="about-five__progress">
+                                    <div class="about-five__progress-box">
+                                        <div class="circle-progress"
+                                            data-options='{ "value": 0.9,"thickness": 3,"emptyFill": "#e5eeec","lineCap": "square", "size": 138, "fill": { "color": "#15c8a0" } }'>
+                                        </div><!-- /.circle-progress -->
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="about-five__progress-content">
+                                        <h3>Successful causes</h3>
+                                    </div>
+                                </div>
+                                <div class="about-five__progress">
+                                    <div class="about-five__progress-box">
+                                        <div class="circle-progress"
+                                            data-options='{ "value": 0.5,"thickness": 3,"emptyFill": "#e5eeec","lineCap": "square", "size": 138, "fill": { "color": "#15c8a0" } }'>
+                                        </div><!-- /.circle-progress -->
+                                        <span>50%</span>
+                                    </div><!-- /.about-five__progress-box -->
+                                    <div class="about-five__progress-content">
+                                        <h3>Amazing donors</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     
         <!--Causes One End-->
 
@@ -270,8 +326,7 @@
                                 </div>
                                 <div class="three-boxes__text-box">
                                     <h2>Healthy Food</h2>
-                                    <p class="three-boxes__text">Lorem ipsum is simply free text available amet,
-                                        consectetuer adipiscing elit. There are not many passages of ipsum.</p>
+                                    <p class="three-boxes__text">“It is health that is real wealth and not pieces of gold and silver.” – Mahatma Gandhi</p>
                                     <a href="#" class="three-boxes__btn"><i class="fa fa-heart"></i>Donate </a>
                                 </div>
                             </div>
@@ -319,7 +374,7 @@
         <!--Three Boxes End-->
 
         <!--Helping One Start-->
-        <section class="contact-page">
+        <section ref="contact" class="contact-page">
             <div class="container">
                 <div class="section-title text-center">
                     <span class="section-title__tagline">Contact With Us</span>
@@ -879,6 +934,13 @@ export default {
     },
     collapseNav(){
       this.nav_class = 'mobile-nav__wrapper'
+    },
+
+    scrollToDiv(refName){
+        var element = this.$refs[refName];
+    var top = element.offsetTop;
+
+    window.scrollTo(0, top);
     }
   },
 }
