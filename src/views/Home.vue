@@ -5,7 +5,7 @@
     </div>
     <!-- /.preloader -->
     <div class="page-wrapper">
-        <header style="position: fixed; z-index: 999; width:100%;" class="main-header clearfix">
+        <header  class="main-header clearfix">
             <div style="background-color: white;" class="main-header__logo">
                 <a href="index.html">
                     <img style="width: 50px; height: 50px;" src="assets/images/resources/logo.png" alt="">
